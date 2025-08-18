@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:project/home_pages.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,11 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: Material(
-          child: Container(child: Text("Welcome to 30 Days of flutter")),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: "Flutter Demo",
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomePages(), // Scaffold is now wrapped in MaterialApp
     );
   }
 }
