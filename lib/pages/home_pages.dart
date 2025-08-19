@@ -10,6 +10,7 @@ class HomePages extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: const Text("Catalog App"),
         centerTitle: true, // centers the title
       ),
@@ -19,7 +20,7 @@ class HomePages extends StatelessWidget {
           child: Text("Welcome to $days days of flutter by $name"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(backgroundColor: Colors.deepPurple),
     );
   }
 }
